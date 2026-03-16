@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: recruitment-config
+  namespace: recruitment-app
+
+data:
+  PORT: "3000"
+  DB_NAME: "hr_system"
+  MONGO_URI: "mongodb://mongodb-service:27017/hr_system"
